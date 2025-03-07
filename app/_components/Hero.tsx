@@ -18,7 +18,7 @@ type Props = {
 const MAX_GRADIENT_BREAK = 25;
 const EASE = [.24, .43, .15, .97];
 
-export default function({ translateXPercentage, mousePositionX, mousePositionY, mouseSpeedScale, scrollY }: Props) {
+export default function Hero({ translateXPercentage, mousePositionX, mousePositionY, mouseSpeedScale, scrollY }: Props) {
     const [windowHeight, setWindowHeight] = useState(0);
 
     const gradientStyling = useTransform(scrollY, () => {

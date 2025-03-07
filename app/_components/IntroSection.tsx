@@ -8,7 +8,7 @@ import TranslatingImage from "./TranslatingImage";
 
 
 
-export default function () {
+export default function InfoSection() {
 
     return (
         <section className="md:min-h-screen px-0 sm:px-6 md:px-12 lg:px-20 pt-20 mt-20 flex flex-col gap-20">

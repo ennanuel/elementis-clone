@@ -11,7 +11,7 @@ type Props = {
     imageClassName?: string; 
 }
 
-export default function({ src, alt, containerClassName, imageClassName }: Props) {
+export default function TranslatingImage({ src, alt, containerClassName, imageClassName }: Props) {
 
     const containerRef = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({ target: containerRef, offset: ["start end", "end start"] });

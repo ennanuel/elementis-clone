@@ -4,7 +4,7 @@ import TranslatingImage from "./TranslatingImage";
 
 
 
-export default function () {
+export default function ContactSection() {
 
     return (
         <section className="lg:min-h-screen grid grid-cols-1 md:grid-cols-2 bg-[var(--text-color)] text-[var(--main-color)]">

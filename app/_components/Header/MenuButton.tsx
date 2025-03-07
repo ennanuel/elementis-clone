@@ -6,7 +6,7 @@ type Props = {
     reverse?: boolean;
 }
 
-export default function ({ showMenu, reverse, toggleMenu }: Props) {
+export default function MenuButton({ showMenu, reverse, toggleMenu }: Props) {
 
     return (
         <button onClick={toggleMenu} className="relative z-[10] p-1 h-8 lg:h-10 aspect-square block">

@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 const EASE = [.24, .43, .15, .97];
 const TEXT = "Transira";
 
-export default function () {
+export default function IntroAnimation() {
     const [scope, animate] = useAnimate();
     const [hide, setHide] = useState(false);
     const [useDifferentAnimation, setUseDifferentAnimation] = useState(false);

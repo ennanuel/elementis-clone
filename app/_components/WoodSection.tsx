@@ -17,7 +17,7 @@ type Props = {
 
 const IMAGES = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-export default function ({ translateXPercentage, mousePositionY }: Props) {
+export default function WoodSection ({ translateXPercentage, mousePositionY }: Props) {
     const containerRef = useRef<HTMLDivElement>(null);
     
     const images = useRef(IMAGES.map(() => generateId()));

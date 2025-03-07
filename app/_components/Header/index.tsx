@@ -22,7 +22,7 @@ const DURATION = 1;
 const MAX_VALUE = 100;
 const MIN_VALUE = 0;
 
-export default function ({ setShowMenu, showMenu, scrollY, mousePositionY, ref, childRef }: Props) {
+export default function Header({ setShowMenu, showMenu, scrollY, mousePositionY, ref, childRef }: Props) {
     const clipAnimationControls = useRef<AnimationPlaybackControls>(null);
     const clipProgress = useMotionValue(MAX_VALUE);
 

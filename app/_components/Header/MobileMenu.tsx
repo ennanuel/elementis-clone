@@ -1,6 +1,5 @@
 import { FiFacebook, FiInstagram, FiYoutube } from "react-icons/fi";
 import { HiArrowUpRight } from "react-icons/hi2";
-import { MdOutlineArrowOutward } from "react-icons/md";
 import { SiTiktok, SiWhatsapp } from "react-icons/si";
 
 
@@ -8,7 +7,7 @@ type Props = {
     showMenu: boolean;
 }
 
-export default function ({ showMenu }: Props) {
+export default function MobileMenu({ showMenu }: Props) {
 
     return (
         <div className={`${showMenu ? 'overflow-y-auto overflow-x-hidden' : 'pointer-events-none overflow-hidden'} block md:hidden max-h-[calc(100vh_-_60px)] w-full`}>

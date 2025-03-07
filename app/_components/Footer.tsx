@@ -3,7 +3,7 @@ import { SiTiktok, SiWhatsapp } from "react-icons/si";
 
 
 
-export default function () {
+export default function Footer() {
 
     return (
         <footer className="bg-[var(--main-color)] text-[var(--text-color)] px-0 sm:px-10 lg:px-20">

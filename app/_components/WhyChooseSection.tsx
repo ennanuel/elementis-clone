@@ -5,7 +5,7 @@ import TranslatingImage from "./TranslatingImage";
 import { useScroll, useTransform, motion } from 'framer-motion';
 
 
-export default function ({ mustNotShowHeader }: { mustNotShowHeader: React.RefObject<boolean> }) {
+export default function WhyChooseSection ({ mustNotShowHeader }: { mustNotShowHeader: React.RefObject<boolean> }) {
     const containerRef = useRef<HTMLElement>(null);
     const [windowHeight, setWindowHeight] = useState(0);
     const [isMobileDevice, setIsMobileDevice] = useState(false);

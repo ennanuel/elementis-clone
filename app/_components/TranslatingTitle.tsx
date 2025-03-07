@@ -9,7 +9,7 @@ type Props = {
 
 const REPEAT = [1, 2];
 
-export default function ({ textArray, translateXPercentage, textColor }: Props) {
+export default function TranslatingTitle ({ textArray, translateXPercentage, textColor }: Props) {
     const heroRef = useRef<HTMLElement>(null);
     const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start end", "end start"] });
     const containerTranslateX = useTransform(scrollYProgress, [0, 1], ['0%', '10%']);

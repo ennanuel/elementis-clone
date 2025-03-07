@@ -61,7 +61,7 @@ const CAROUSEL_VALUES = [
   },
 ]
 
-export default function ({ translateXPercentage, mousePositionX, mousePositionY }: Props) {
+export default function StateOfArtDesignSection({ translateXPercentage, mousePositionX, mousePositionY }: Props) {
     const [carouselWidth, setCarouselWidth] = useState(0);
     const lineProgressScale = useMotionValue(0);
 
