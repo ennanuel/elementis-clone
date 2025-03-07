@@ -9,7 +9,7 @@ export default function ContactSection() {
     return (
         <section className="lg:min-h-screen grid grid-cols-1 md:grid-cols-2 bg-[var(--text-color)] text-[var(--main-color)]">
             <div>
-                <span className="block w-full h-full min-h-[400px] md:min-h-[320px] bg-[var(--secondary-color)]">
+                <span className="block w-full h-full min-h-[400px] md:min-h-[320px] ">
                     <TranslatingImage src="/images/contact.jpg" alt="Contact form image" />
                 </span>
             </div>
