@@ -10,18 +10,22 @@ export default function IntroAnimation() {
     const [useDifferentAnimation, setUseDifferentAnimation] = useState(false);
 
     useEffect(() => {
-        const body = document.getElementById('body')
+        const body = document.getElementById('body');
+        let animationControls;
+
         if(!useDifferentAnimation) {
             body?.classList?.add('overflow-hidden');
         } else {
             body?.classList?.remove('overflow-hidden');
 
-            animate(scope.current, { backgroundColor: 'var(--main-color)', color: 'var(--text-color)' }, {
+            animationControls = animate(scope.current, { backgroundColor: 'var(--main-color)', color: 'var(--text-color)' }, {
                 duration: 0.5,
                 onComplete: () => setHide(true)
             });
-        }
-    }, [useDifferentAnimation]);
+        };
+
+        return animationControls?.stop;
+    }, [useDifferentAnimation, scope, animate]);
 
     return (
         <AnimatePresence>
