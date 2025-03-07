@@ -24,7 +24,7 @@ export default function Hero({ translateXPercentage, mousePositionX, mousePositi
     const gradientStyling = useTransform(scrollY, () => {
         if(scrollY.get() > windowHeight) return 'linear-gradient(var(--main-background) 0 100%)';
 
-        let gradient: string[] = [];
+        const gradient: string[] = [];
 
         for(let i = 0; i < MAX_GRADIENT_BREAK; i++) {
             const scrollYPercentage = Math.min(((scrollY.get() + 350) / (windowHeight)), 1);
