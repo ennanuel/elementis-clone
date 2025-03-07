@@ -1,5 +1,5 @@
 
-import { motion, MotionValue, useMotionValue, useTransform } from "framer-motion";
+import { motion, MotionValue, useTransform } from "framer-motion";
 
 import { FiPlay } from "react-icons/fi";
 import { GoArrowDown } from "react-icons/go";
@@ -45,17 +45,17 @@ export default function({ translateXPercentage, mousePositionX, mousePositionY, 
 
     return (
         <section className="group overflow-x-clip">
-            <div className="absolute top-0 left-0 before:absolute before:w-full before:h-full before:bg-black/50">
-                <video src="/hero-video.mp4" autoPlay loop className="w-screen h-screen object-cover"></video>
+            <div className="absolute top-0 left-0 before:absolute before:w-full before:h-full before:bg-black/30">
+                <video id="hero-video" src="/hero-video.webm" autoPlay muted loop className="w-screen h-screen object-cover"></video>
                 <motion.div style={{ maskImage: gradientStyling }} className="bg-[var(--main-color)] absolute top-0 left-0 w-full h-[calc(100vh_+_50px)]"></motion.div>
             </div>
             <div className="min-h-screen relative flex flex-col gap-10">
             <motion.div 
-                style={{ x: mousePositionX, y: mousePositionY, scale: mouseSpeedScale }} 
+                style={{ x: mousePositionX, y: mousePositionY, scale: mouseSpeedScale }}
                 className="duration-200 ease-expo transition-transform fixed top-0 left-0 pointer-events-none"
             >
                 <span className="group-hover:scale-100 -translate-x-1/2 -translate-y-1/2 scale-0 ease-expo duration-500 transition-[transform] backdrop-blur-md hidden lg:flex items-center justify-center w-16 aspect-square rounded-full bg-white/20">
-                <FiPlay size={20} />
+                    <FiPlay size={20} />
                 </span>
             </motion.div>
             <div className="flex-1 flex items-end overflow-hidden">
@@ -73,7 +73,6 @@ export default function({ translateXPercentage, mousePositionX, mousePositionY, 
                 <motion.hr 
                     initial={{ transform: 'scaleX(0)' }} 
                     animate={{ transform: 'scaleX(100%)' }} 
-                    
                     className="absolute top-0 left-0 w-full bg-white/50 border-none outline-none origin-left h-[1px] block" 
                 />
                 <div className="hidden md:flex items-start justify-start">

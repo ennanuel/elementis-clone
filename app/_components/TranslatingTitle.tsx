@@ -28,8 +28,8 @@ export default function ({ textArray, translateXPercentage, textColor }: Props) 
                     >
                         <div className="flex items-center gap-2">
                             {
-                                textArray.map((title) => (
-                                    <span key={title} style={{ color: textColor }} className={`flex items-center justify-center`}>
+                                textArray.map((title, subIndex) => (
+                                    <span key={subIndex} style={{ color: textColor }} className={`flex items-center justify-center`}>
                                         <span className="inline-block font-inter text-[2rem] xs:text-[4rem] lg:text-[6rem] leading-[2rem] xs:leading-[4rem] lg:leading-[6rem]">&nbsp;•&nbsp;</span>
                                         <span className="text-[6rem] tracking-tighter font-light whitespace-nowrap leading-[6rem] xs:text-[8rem] xs:leading-[8rem] lg:text-[10rem] lg:leading-[10rem]">{title}</span>
                                     </span>

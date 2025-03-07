@@ -174,7 +174,7 @@ export default function ({ setShowMenu, showMenu, scrollY, mousePositionY, ref, 
                                         id="btn-path"
                                         pathLength={0}
                                         transition={{ duration: 1, ease: EASE }} 
-                                        className="stroke-[var(--border)]" 
+                                        className="stroke-[var(--text)]" 
                                         fill="none" 
                                         strokeWidth="1" 
                                         strokeMiterlimit="10" 

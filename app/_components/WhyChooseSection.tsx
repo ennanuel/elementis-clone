@@ -60,8 +60,8 @@ export default function ({ mustNotShowHeader }: { mustNotShowHeader: React.RefOb
                                 ["Blocks 70% of the sun's infrared heat energy", "Improves thermal insulation", "Maximizes natural daylight", "Reflects solar heat", "Cooler interiors and reduced energy costs", "Creates breathtaking natural outlooks instead of traditional walls"]
                                 .map((text, index) => (
                                     <li key={index} className="px-4 xs:px-6 sm:px-0 min-h-14 lg:min-h-16 py-3 flex justify-start items-center gap-6 sm:gap-8 lg:gap-12 border-t border-white/30">
-                                    <span className="font-geist_mono font-light text-xs lg:text-base">{index < 9 ? `0${index + 1}` : index}</span>
-                                    <span className="text-sm leading-[1.2rem] lg:text-lg lg:leading-[1.6rem]">{text}</span>
+                                        <span className="font-geist_mono font-light text-xs lg:text-base">{index < 9 ? `0${index + 1}` : index}</span>
+                                        <span className="text-sm leading-[1.2rem] lg:text-lg lg:leading-[1.6rem]">{text}</span>
                                     </li>
                                 ))
                             }
@@ -69,7 +69,7 @@ export default function ({ mustNotShowHeader }: { mustNotShowHeader: React.RefOb
                         </div>
                     </motion.div>
                     <div className="relative z-[2]">
-                        <div className="relative min-h-[400px] w-full md:h-screen bg-[var(--secondary-color)]">
+                        <div className="relative min-h-[400px] w-full md:h-screen">
                             <div className="absolute md:relative top-0 left-0 w-full h-full">
                                 <TranslatingImage src="/images/resort2.jpg" alt="image of a resort" />
                             </div>
@@ -92,8 +92,8 @@ export default function ({ mustNotShowHeader }: { mustNotShowHeader: React.RefOb
                             ["Built in humidity control", "Incorporated air circulation system", "Protection against mold", "Silent and sleek design", "Life expectancy of 50 years", "Easily sourced components", "Non-toxic, recyclable and non-flammable", "Only 30% of the solar energy powers the system for up to 36 hours"]
                             .map((text, index) => (
                                 <li key={index} className="px-4 xs:px-6 sm:px-0 min-h-14 lg:min-h-16 py-3 flex justify-start items-center gap-8 lg:gap-12 border-t border-white/30">
-                                <span className="font-geist_mono font-light text-xs lg:text-base">{index < 9 ? `0${index + 1}` : index}</span>
-                                <span className="text-sm leading-[1.2rem] lg:text-lg lg:leading-[1.6rem]">{text}</span>
+                                    <span className="font-geist_mono font-light text-xs lg:text-base">{index < 9 ? `0${index + 1}` : index}</span>
+                                    <span className="text-sm leading-[1.2rem] lg:text-lg lg:leading-[1.6rem]">{text}</span>
                                 </li>
                             ))
                         }
@@ -101,7 +101,7 @@ export default function ({ mustNotShowHeader }: { mustNotShowHeader: React.RefOb
                     </div>
                 </div>
                 <div>
-                    <div className="sticky top-0 min-h-[400px] w-full md:h-screen bg-[var(--secondary-color)]">
+                    <div className="sticky top-0 min-h-[400px] w-full md:h-screen">
                         <div className="absolute md:relative top-0 left-0 w-full h-full">
                             <TranslatingImage src="/images/resort1.jpg" alt="image of a resort" />
                         </div>

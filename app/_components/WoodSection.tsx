@@ -121,7 +121,7 @@ export default function ({ translateXPercentage, mousePositionY }: Props) {
                                             key={id}
                                             id={`list-picture-${index}`}
                                             alt={`image of something ${index + 1}`}
-                                            src={`/images/exceptional-wood${index + 1}.jpg`} 
+                                            src={`/images/exceptional-wood${index + 1}.webp`} 
                                             className="list-picture block absolute top-0 left-0 w-full h-full ease-expo duration-1000" 
                                         />
                                     ))

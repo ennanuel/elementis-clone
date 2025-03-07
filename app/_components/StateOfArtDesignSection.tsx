@@ -106,13 +106,13 @@ export default function ({ translateXPercentage, mousePositionX, mousePositionY 
                                 CAROUSEL_VALUES.map(({ title, desc }, index) => (
                                     <li key={title} className="w-fit">
                                     <article className="flex flex-col gap-4 lg:gap-6 min-w-[240px] xs:min-w-[280px] sm:min-w-[320px] lg:min-w-[400px]">
-                                        <span className="font-geist_mono text-base lg:text-lg">{index < 9 ? `0${index + 1}` : index + 1}.</span>
-                                        <span className="w-full h-[160px] xs:h-[200px] lg:h-[280px]">
-                                        <img src={`/images/carousel${index + 1}.jpg`} alt="" className="w-full h-full object-cover" />
-                                        </span>
-                                        <h4 className="mt-4 text-xl lg:text-2xl tracking-tight">{title}</h4>
-                                        <p className="text-sm lg:text-lg leading-[1.2rem] lg:leading-[1.6rem]">{desc}</p>
-                                    </article>
+                                            <span className="font-geist_mono text-base lg:text-lg">{index < 9 ? `0${index + 1}` : index + 1}.</span>
+                                            <span className="w-full h-[160px] xs:h-[200px] lg:h-[280px]">
+                                                <img src={`/images/carousel${index + 1}.webp`} alt="" className="w-full h-full object-cover" />
+                                            </span>
+                                            <h4 className="mt-4 text-xl lg:text-2xl tracking-tight">{title}</h4>
+                                            <p className="text-sm lg:text-lg leading-[1.2rem] lg:leading-[1.6rem]">{desc}</p>
+                                        </article>
                                     </li>
                                 ))
                             }
