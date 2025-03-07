@@ -63,8 +63,6 @@ const IMAGES = [
     }
 ];
 
-const EASE = [.24, .43, .15, .97];
-
 export default function LargeMenu({ clipPath, showMenu, toggleMenu, mousePositionY }: Props) {
     const images = useRef(IMAGES.map(({ title, image }) => ({ title, image: `/images/${image}`, id: generateId() })));
 
