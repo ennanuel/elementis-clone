@@ -1,6 +1,6 @@
 
 
-import { AnimationPlaybackControls, motion, animate, MotionValue, useMotionValue, useTransform } from "framer-motion";
+import { AnimationPlaybackControls, motion, animate, MotionValue, useMotionValue, useTransform, cubicBezier } from 'framer-motion';
 
 import MenuButton from "./MenuButton";
 import LargeMenu from "./LargeMenu";
@@ -17,7 +17,9 @@ type Props = {
     childRef: React.RefObject<HTMLDivElement | null>;
 };
 
-const EASE = [.24, .43, .15, .97];
+const EASE = cubicBezier(.24, .43, .15, .97);
+const EASE_REVERSED = cubicBezier(.97, .15, .43, .24);
+
 const DURATION = 1;
 const MAX_VALUE = 100;
 const MIN_VALUE = 0;
@@ -36,11 +38,11 @@ export default function Header({ setShowMenu, showMenu, scrollY, mousePositionY,
         buttonAnimation.current?.stop();
         buttonAnimation.current = animate(
             buttonSVG, 
-            { pathLength: 1 }, 
+            { pathLength: 1 } as any, 
             { 
                 duration: 1, 
                 ease: EASE,
-                onComplete: buttonSVG.setAttribute('path-length', '0')
+                onComplete: () => buttonSVG.setAttribute('path-length', '0')
             }
         );
     };
@@ -53,11 +55,11 @@ export default function Header({ setShowMenu, showMenu, scrollY, mousePositionY,
         buttonAnimation.current?.stop();
         buttonAnimation.current = animate(
             buttonSVG, 
-            { pathLength: 0 }, 
+            { pathLength: 0 } as any, 
             { 
                 duration: 1, 
                 ease: EASE,
-                onComplete: buttonSVG.setAttribute('path-length', '0')
+                onComplete: () => buttonSVG.setAttribute('path-length', '0')
             }
         );
     }
@@ -107,7 +109,7 @@ export default function Header({ setShowMenu, showMenu, scrollY, mousePositionY,
 
         clipAnimationControls.current = animate(clipProgress, [start, end], { 
             duration, 
-            ease: EASE.reverse()
+            ease: EASE_REVERSED
         });
     }
 
