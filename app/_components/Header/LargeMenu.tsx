@@ -23,43 +23,43 @@ type Props = {
 const IMAGES = [
     {
         title: "Home",
-        image: "home.jpg",
+        image: "home.webp",
     },
     {
         title: "Destination",
-        image: "destinations.jpg",
+        image: "destinations.webp",
     }, 
     {
         title: "Wellness",
-        image: "wellness.jpg"
+        image: "wellness.webp"
     }, 
     {
         title: "Innovation",
-        image: "innovation.jpg"
+        image: "innovation.webp"
     }, 
     {
         title: "Nature",
-        image: "nature.jpg"
+        image: "nature.webp"
     }, 
     {
         title: "Community",
-        image: "community.jpg"
+        image: "community.webp"
     }, 
     {
         title: "The Story",
-        image: "the-story.jpg"
+        image: "the-story.webp"
     }, 
     {
         title: "New Developments",
-        image: "new-developments.jpg"
+        image: "new-developments.webp"
     }, 
     {
         title: "Press Room",
-        image: "press-room.jpg"
+        image: "press-room.webp"
     }, 
     {
         title: "Careers",
-        image: "careers.jpg"
+        image: "careers.webp"
     }
 ];
 
