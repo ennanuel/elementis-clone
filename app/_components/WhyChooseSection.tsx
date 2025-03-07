@@ -11,7 +11,7 @@ export default function WhyChooseSection ({ mustNotShowHeader }: { mustNotShowHe
     const [isMobileDevice, setIsMobileDevice] = useState(false);
 
     const [{ containerTop, textContainerHeight }, setTextContainerHeight] = useState({ containerTop: 0, textContainerHeight: 0 });
-    const endOfFirstScroll = useMemo(() => containerTop + textContainerHeight - windowHeight, [containerTop, textContainerHeight]);
+    const endOfFirstScroll = useMemo(() => containerTop + textContainerHeight - windowHeight, [containerTop, textContainerHeight, windowHeight]);
 
     const { scrollY } = useScroll({ 
         target: containerRef
