@@ -38,7 +38,7 @@ export default function Header({ setShowMenu, showMenu, scrollY, mousePositionY,
         buttonAnimation.current?.stop();
         buttonAnimation.current = animate(
             buttonSVG, 
-            { pathLength: 1 } as any, 
+            { pathLength: 1 }, 
             { 
                 duration: 1, 
                 ease: EASE,
@@ -55,7 +55,7 @@ export default function Header({ setShowMenu, showMenu, scrollY, mousePositionY,
         buttonAnimation.current?.stop();
         buttonAnimation.current = animate(
             buttonSVG, 
-            { pathLength: 0 } as any, 
+            { pathLength: 0 }, 
             { 
                 duration: 1, 
                 ease: EASE,
