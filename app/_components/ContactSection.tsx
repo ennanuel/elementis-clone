@@ -51,10 +51,10 @@ export default function ContactSection() {
                         <div className="flex flex-wrap gap-x-6 gap-y-2">
                         {
                             ["Resorts and Residences", "Retreats", "Wellness", "New Developments", "Building Innovation"].map((title, index) => (
-                            <span className="flex items-center gap-2">
-                                <input type="checkbox" className="bg-transparent appearance-none w-4 h-4 aspect-square flex items-center justify-center border border-[var(--main-color)] checked:bg-[var(--main-color)] before:w-1 before:aspect-square before:rounded-md checked:before:bg-[var(--text-color)]" />
-                                <label className="text-sm lg:text-base">{title}</label>
-                            </span>
+                                <span key={index} className="flex items-center gap-2">
+                                    <input type="checkbox" className="bg-transparent appearance-none w-4 h-4 aspect-square flex items-center justify-center border border-[var(--main-color)] checked:bg-[var(--main-color)] before:w-1 before:aspect-square before:rounded-md checked:before:bg-[var(--text-color)]" />
+                                    <label className="text-sm lg:text-base">{title}</label>
+                                </span>
                             ))
                         }
                         </div>
