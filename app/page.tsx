@@ -63,8 +63,8 @@ export default function Home() {
 
   const animateTitle = (animationControls?: AnimationPlaybackControls | null, mustFinishAnimation?: boolean) => {
     let controls = animationControls;
-    let start = isScrollingDown.current ? 100 : 0;
-    let end = isScrollingDown.current ? 0 : 100;
+    const start = isScrollingDown.current ? 100 : 0;
+    const end = isScrollingDown.current ? 0 : 100;
 
     if(animationControls) animationControls.stop();
 
