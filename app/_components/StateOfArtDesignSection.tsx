@@ -2,7 +2,7 @@
 
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import TranslatingTitle from "./TranslatingTitle";
-import { MotionValue, PanInfo, ResolvedValues, motion, useMotionValue } from 'framer-motion';
+import { MotionValue, ResolvedValues, motion, useMotionValue } from 'framer-motion';
 import { useEffect, useState } from "react";
 
 

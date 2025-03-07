@@ -1,6 +1,5 @@
 import { AnimatePresence, motion, useAnimate } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { v4 as generateId } from 'uuid';
 
 const EASE = [.24, .43, .15, .97];
 const TEXT = "Transira";

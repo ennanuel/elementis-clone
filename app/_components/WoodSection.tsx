@@ -1,7 +1,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { useScroll, useTransform, motion, MotionValue, animate, AnimationPlaybackControls } from 'framer-motion';
+import { useScroll, useTransform, motion, MotionValue, animate } from 'framer-motion';
 
 import { CiMenuBurger } from "react-icons/ci";
 

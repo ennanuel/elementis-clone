@@ -113,4 +113,4 @@ export default function({ translateXPercentage, mousePositionX, mousePositionY, 
             </div>
         </section>
       )
-    }
+}

@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 
-import { useMotionValue, useScroll, useMotionValueEvent, animate, useTransform, AnimationPlaybackControls, motion } from 'framer-motion';
+import { useMotionValue, useScroll, useMotionValueEvent, animate, useTransform, AnimationPlaybackControls } from 'framer-motion';
 
 import Hero from './_components/Hero';
 import Header from './_components/Header';
