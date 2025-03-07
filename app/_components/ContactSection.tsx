@@ -10,7 +10,7 @@ export default function ContactSection() {
         <section className="lg:min-h-screen grid grid-cols-1 md:grid-cols-2 bg-[var(--text-color)] text-[var(--main-color)]">
             <div>
                 <span className="block w-full h-full min-h-[400px] md:min-h-[320px] bg-[var(--secondary-color)]">
-                    <TranslatingImage src="/images/contact.webp" alt="Contact form image" />
+                    <TranslatingImage src="/images/contact.jpg" alt="Contact form image" />
                 </span>
             </div>
             <div className="flex items-center justify-center px-4 xs:px-6 md:px-20 py-20 lg:py-[120px]">
