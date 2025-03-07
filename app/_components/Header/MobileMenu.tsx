@@ -15,14 +15,14 @@ export default function MobileMenu({ showMenu }: Props) {
             <h4 className="text-sm text-[var(--main-color)] opacity-50">Discover Pages</h4>
             <ul className="mt-8 flex flex-col border-[var(--main-color)]">
                 {
-                ["Home", "Destinations", "Wellness", "Innovation", "Nature", "Community", "The Story", "New Developments", "Press Room", "Careers"]
-                    .map((title, index) => (
-                    <li key={index}>
-                        <a href="" className="h-16 flex items-center justify-between border-b border-[var(--main-color)]">
-                        <span className="text-xl font-light">{title}</span>
-                        <HiArrowUpRight size={18} />
-                        </a>
-                    </li>
+                    ["Home", "Destinations", "Wellness", "Innovation", "Nature", "Community", "The Story", "New Developments", "Press Room", "Careers"]
+                        .map((title, index) => (
+                        <li key={index}>
+                            <a href="" className="h-16 flex items-center justify-between border-b border-[var(--main-color)]">
+                                <span className="text-xl font-light">{title}</span>
+                                <HiArrowUpRight size={18} />
+                            </a>
+                        </li>
                     ))
                 }
             </ul>
@@ -45,9 +45,9 @@ export default function MobileMenu({ showMenu }: Props) {
                 <div className="flex gap-6">
                 {
                     [FiInstagram, FiFacebook, SiWhatsapp, SiTiktok, FiYoutube].map((Icon, index) => (
-                    <span className="flex items-center justify-center">
-                        <Icon size={24} />
-                    </span>
+                        <span key={index} className="flex items-center justify-center">
+                            <Icon size={24} />
+                        </span>
                     ))
                 }
                 </div>
