@@ -1,10 +1,11 @@
 
-import { motion, MotionValue, useTransform } from "framer-motion";
+import { useEffect, useState } from "react";
+import { cubicBezier, motion, MotionValue, useTransform } from "framer-motion";
 
 import { FiPlay } from "react-icons/fi";
 import { GoArrowDown } from "react-icons/go";
+
 import TranslatingTitle from "./TranslatingTitle";
-import { useEffect, useState } from "react";
 
 
 type Props = { 
@@ -16,7 +17,7 @@ type Props = {
 };
 
 const MAX_GRADIENT_BREAK = 25;
-const EASE = [.24, .43, .15, .97];
+const EASE = cubicBezier(.24, .43, .15, .97);
 
 export default function Hero({ translateXPercentage, mousePositionX, mousePositionY, mouseSpeedScale, scrollY }: Props) {
     const [windowHeight, setWindowHeight] = useState(0);
